@@ -1,6 +1,9 @@
 #include <sstream>
 #include <iomanip>
+// delete string if it works
+#include <string>
 #include "product.h"
+#include "util.h"
 
 using namespace std;
 
@@ -52,6 +55,3 @@ void Product::dump(std::ostream& os) const
 {
     os << category_ << "\n" << name_ << "\n" << price_ << "\n" << qty_ << endl;
 }
-
-
-
